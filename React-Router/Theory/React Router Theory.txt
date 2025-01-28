@@ -1,0 +1,23 @@
+Question 1: What is React Router? How does it handle routing in single-page applications?
+=> React Router is a library for React that helps manage navigation in single-page applications (SPAs). It lets you show different pages or views in your app based on the URL, without reloading the whole page.
+It helps users move between different parts of your app (like "Home," "About," or "Profile" pages) smoothly, without making the app feel slow.
+-> React Router handles routing in single-page applications by changing the browser's URL and dynamically displaying the right component without reloading the page. It listens to URL changes and renders the matching component, giving the feel of navigating between pages while staying on the same page.
+
+Question 2: Explain the difference between BrowserRouter, Route, Link, and Switch
+components in React Router.
+Summary of Roles:
+BrowserRouter -> Wraps the app and enables routing using the browser’s history.
+Route -> Maps a specific URL path to a component.
+Link -> Creates navigation links that change the URL without a full page reload.
+Switch/Routes-> Ensures only one route matches and renders at a time (prioritized rendering in v6).
+
+=> BrowserRouter -> Acts as the main wrapper for routing in React applications.
+   		 -> Uses the browser’s History API to manage the navigation and keep the URL in sync with the app's state.
+		 -> Provides the context for routing, enabling components like Route and Link to work.
+=> Route -> Defines the path (URL) and specifies which component should render for that path.
+	 -> Matches the current URL to the defined path and renders the corresponding component.
+=> Link -> Provides navigation without refreshing the page (unlike a standard <a> tag).
+	-> Automatically updates the URL and renders the correct component.
+	-> Enables users to navigate between routes.
+=> Switch(Replaced by Routes in React Router v6+)-> Ensured that only the first matching Route was rendered, even if multiple routes matched the URL.
+  	-> Prevented multiple components from rendering for overlapping routes.

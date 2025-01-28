@@ -1,0 +1,25 @@
+Question 1: What is React.js? How is it different from other JavaScript frameworks and
+libraries?
+=>React.js is a popular JavaScript library for building user interfaces, especially for web applications. React JS is a open source JavaScript Library for create Reusable Components.
+- React.js is a library focused only on building user interfaces, while many other frameworks (like Angular or Vue) are full-featured and handle everything, including routing and state management. React’s use of the Virtual DOM makes it faster and more efficient compared to direct DOM manipulation used by others.
+
+Question 2: Explain the core principles of React such as the virtual DOM and componentbased architecture.
+=>1. Virtual DOM
+The Virtual DOM is a lightweight copy of the real DOM.
+React updates this Virtual DOM first whenever something changes in the UI.
+Then, it compares the Virtual DOM with the real DOM, calculates the difference, and updates only the parts that changed.
+This makes updates faster and more efficient.
+
+- 2. Component-Based Architecture
+React applications are built using components.
+A component is like a building block that represents a part of the user interface (e.g., a button, form, or navbar).
+Each component is reusable and manages its own logic and state.
+By combining components, you can create complex UIs in a modular and organized way.
+
+Question 3: What are the advantages of using React.js in web development?
+=> Reusable Components: Build small, reusable pieces of UI to save time and effort.
+- Fast Performance: The Virtual DOM ensures quick updates and smooth performance.
+- Easy to Use: React’s simple syntax and component-based structure make it beginner-friendly.
+- SEO-Friendly: Supports server-side rendering for better search engine rankings.
+- Large Community: Plenty of resources, tools, and support available.
+- Cross-Platform: Use React for both web apps and mobile apps with React Native.

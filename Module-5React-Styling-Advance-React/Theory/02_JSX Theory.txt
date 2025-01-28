@@ -1,0 +1,10 @@
+Question 1: What is JSX in React.js? Why is it used?
+=>JSX (JavaScript XML) is a syntax in React that lets you write HTML-like code directly in JavaScript, making it easier to create and structure UI components. It improves readability and integrates seamlessly with React's rendering logic. 
+jsx allows to access variable. it is little bit(0.3s) fast as compare to js. also jsx allows {}
+
+Question 2: How is JSX different from regular JavaScript? Can you write JavaScript insideJSX?
+=>JSX is different from regular JavaScript because it lets you write HTML-like code alongside JavaScript, making UI creation easier.
+ Yes, you can write JavaScript inside JSX using curly braces {}.
+
+Question 3: Discuss the importance of using curly braces {} in JSX expressions.
+=>Curly braces {} in JSX are important because they let you write JavaScript like variables, functions, or calculations, directly inside the HTML-like code. This makes it easy to add dynamic content to your UI.

@@ -1,0 +1,75 @@
+Question 1: How are events handled in React compared to vanilla JavaScript? Explain the
+concept of synthetic events.
+=>In vanilla JavaScript, events are attached directly to elements using methods like addEventListener(). In React, events are handled by passing functions to JSX attributes like onClick, and React manages these events using its own system to ensure consistent behavior across browsers.
+->Synthetic events in React are a system that wraps native DOM events to ensure they behave consistently across different browsers. They help manage events more efficiently by pooling and reusing event objects, improving performance and memory usage.
+  
+Question 2: What are some common event handlers in React.js? Provide examples of
+onClick, onChange, and onSubmit.
+=>onClick, onChange, and onSubmit are common event handlers in React.js.
+example:
+onClick: 
+import React from 'react';
+
+function ClickButton() {
+  const handleClick = () => {
+    alert('Button clicked!');
+  };
+
+  return <button onClick={handleClick}>Click me</button>;
+}
+
+export default ClickButton;
+
+onChange:
+import React, { useState } from 'react';
+
+function NameInput() {
+  const [name, setName] = useState('');
+
+  const handleChange = (event) => {
+    setName(event.target.value);
+  };
+
+  return (
+    <div>
+      <input type="text" onChange={handleChange} placeholder="Enter your name" />
+      <p>Your name is: {name}</p>
+    </div>
+  );
+}
+
+export default NameInput;
+
+onSubmit:
+import React, { useState } from 'react';
+
+function ContactForm() {
+  const [email, setEmail] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevents the page from refreshing
+    alert(`Form submitted with email: ${email}`);
+  };
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <input
+        type="email"
+        value={email}
+        onChange={handleEmailChange}
+        placeholder="Enter your email"
+      />
+      <button type="submit">Submit</button>
+    </form>
+  );
+}
+
+export default ContactForm;
+
+
+Question 3: Why do you need to bind event handlers in class components?
+=> In React class components, you need to bind event handlers because the this keyword behaves differently in JavaScript functions, especially when you pass them as callbacks.
