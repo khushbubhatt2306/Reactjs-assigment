@@ -4,6 +4,7 @@ import ClickButton from "./Handling Events/ClickButton";
 import InputForm from "./Handling Events/InputForm";
 import LoginLogout from "./Conditional Rendering/LoginLogout";
 import VoteEligibility from "./Conditional Rendering/VoteEligibility";
+import Formhandling from "./Forms in React/Formhandling";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <InputForm />
       <LoginLogout />
       <VoteEligibility />
+      <Formhandling />
     </div>
   );
 }

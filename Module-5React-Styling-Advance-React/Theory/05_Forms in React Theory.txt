@@ -1,0 +1,63 @@
+Question 1: How do you handle forms in React? Explain the concept of controlled
+components.
+=>In React, forms are used to collect user input, like text, emails, passwords, etc. To handle these inputs properly, React gives us two main ways:
+
+1) Controlled Components (most commonly used and recommended).
+2) Uncontrolled Components (less common).
+
+A controlled component in React is a form input (like a text box, dropdown, or checkbox) that is fully managed by React's state.
+The value of the input is stored in the component's state.
+When the user types or changes the input, an onChange function updates the state.
+React re-renders the input to show the updated value.
+
+
+Question 2: What is the difference between controlled and uncontrolled components in
+React?
+=>In React, form inputs can be managed in two ways: controlled components and uncontrolled components.
+=> Controlled Components
+-> React controls the value using state.	
+-> Use state to track the input value.
+-> Updates the state as the user types.
+-> When you need validation, real-time updates, or control.
+-> Requires more code but gives full control.
+-> React has full control over the input.
+example:
+import React, { useState } from "react";
+
+function ControlledInput() {
+  const [value, setValue] = useState("");
+
+  return (
+    <input 
+      type="text" 
+      value={value} 
+      onChange={(e) => setValue(e.target.value)} 
+    />
+  );
+}
+
+=> Uncontrolled Components
+-> The browser (DOM) controls the value.
+-> Use a ref to get the value from the DOM.
+-> No real-time updates, React checks when needed.
+-> Simple forms or compatibility with non-React code.
+-> Simpler but less flexible.
+-> React doesn’t directly control the input.
+example:
+import React, { useRef } from "react";
+
+function UncontrolledInput() {
+  const inputRef = useRef();
+
+  const handleSubmit = () => {
+    alert(inputRef.current.value); // Get input value directly
+  };
+
+  return (
+    <div>
+      <input type="text" ref={inputRef} />
+      <button onClick={handleSubmit}>Submit</button>
+    </div>
+  );
+}
+
