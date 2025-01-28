@@ -1,0 +1,31 @@
+Question 1: What are components in React? Explain the difference between functional
+components and class components.
+=> components in React are reusable code we can use whenever we need to call.
+it is a block of code.
+-> Functional Components:
+ - Simple JavaScript functions that return JSX.
+ - we can use hooks (e.g., useState, useEffect) for state and lifecycle.
+ - Easier to write and read, with less boilerplate code.
+ - Lightweight and faster.	
+ - Use hooks like useEffect instead of lifecycle methods.
+
+-> Class Components
+ - JavaScript classes that extend React.Component.
+ - Manage state using this.state and lifecycle.
+ - More verbose due to the class syntax.
+ - Slightly heavier due to class overhead.	
+
+Question 2: How do you pass data to a component using props?
+=>You pass data to a component using props by adding attributes to the component tag, similar to how you add attributes in HTML. The data can then be accessed inside the component using props.
+
+Example:
+function Welcome(props) {
+  return <h1>Hello, {props.name}!</h1>;
+}
+
+// Passing data via props
+<Welcome name="John" />
+
+
+Question 3: What is the role of render() in class components?
+=>The render() method in class components is used to define what the UI should look like. It returns the JSX that React will display on the screen.
