@@ -1,0 +1,18 @@
+Question 1: What are lifecycle methods in React class components? Describe the phases of a
+component’s lifecycle.
+=>Lifecycle methods are special methods in React class components that allow you to control the behavior of a component at different stages of its existence.
+->Phases of a Component's Lifecycle
+1)Mounting : This phase happens when the component is created and added to the DOM.
+	     constructor(), getDerivedStateFromProps(), render(), componentDidMount()
+2)Updating : Occurs when the component updates due to state or prop changes.
+	     getDerivedStateFromProps(), shouldComponentUpdate(), render(), getSnapshotBeforeUpdate(), componentDidUpdate()
+3)Unmounting : Happens when the component is removed from the DOM.
+	       componentWillUnmount()
+
+Question 2: Explain the purpose of componentDidMount(), componentDidUpdate(),and componentWillUnmount().
+=>
+1️) componentDidMount() – Runs after the component is first rendered. Used for fetching data, setting up event listeners, or initializing state.
+
+2️) componentDidUpdate() – Runs after every state or prop update (except the first render). Used for fetching new data or updating the DOM when props/state change.
+
+3️) componentWillUnmount() – Runs before the component is removed or update from the DOM. Used for cleaning up timers, event listeners, or canceling API calls.
