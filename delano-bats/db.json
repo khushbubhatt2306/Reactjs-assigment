@@ -1,0 +1,77 @@
+{
+    "admin": [
+      {
+        "id": "1",
+        "name": "admin",
+        "email": "admin@gmail.com",
+        "password": "1234"
+      }
+    ],
+    "users": [
+      {
+        "id": "1",
+        "name": "user1",
+        "email": "user1@gmail.com",
+        "password": "123456",
+        "img": "https://images.pexels.com/photos/3584924/pexels-photo-3584924.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "phone": "9876235675",
+        "status": "unblock"
+      },
+      {
+        "id": "2",
+        "name": "user2",
+        "email": "user2@gmail.com",
+        "password": "654321",
+        "img": "https://images.pexels.com/photos/3584924/pexels-photo-3584924.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "phone": "9876235675",
+        "status": "block"
+      },
+      {
+        "id": "3",
+        "name": "user3",
+        "email": "user3@gmail.com",
+        "password": "654321",
+        "img": "https://images.pexels.com/photos/3584924/pexels-photo-3584924.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "phone": "9876235675",
+        "status": "unblock"
+      }
+     
+    ],
+    "productlist": [
+      {
+        "id": "1",
+        "title": "OGM",
+        "img": "https://cdn.buttercms.com/Ii746zeCSdGVADUMwJyE",
+        "price": "399.99",
+        "cta": "Buy Now"
+      },
+      {
+        "id": "2",
+        "title": "The OGM(BBCOR)",
+        "img": "https://cdn.buttercms.com/Ii746zeCSdGVADUMwJyE",
+        "price": "122",
+        "cta": "Buy Now"
+      },
+      {
+        "id": "3",
+        "title": "The OG",
+        "img": "https://cdn.buttercms.com/Ii746zeCSdGVADUMwJyE",
+        "price": "365",
+        "cta": "Buy Now"
+      },
+      {
+        "id": "4",
+        "title": "The OG (BBCOR)",
+        "img": "https://cdn.buttercms.com/Ii746zeCSdGVADUMwJyE",
+        "price": "139",
+        "cta": "Buy Now"
+      },
+      {
+        "id": "5",
+        "title": "The OGB",
+        "img": "https://cdn.buttercms.com/Ii746zeCSdGVADUMwJyE",
+        "price": "45",
+        "cta": "Buy Now"
+      }
+    ]
+  }
